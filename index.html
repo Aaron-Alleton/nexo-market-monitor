@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0b1422">
+  <meta name="description" content="NEXO Market Monitor — análisis bursátil móvil">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <title>NEXO Market</title>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><div class="brandmark">N</div><div><b>NEXO</b><small>MARKET MONITOR</small></div></div>
+  <button class="avatar" aria-label="Configuración">⚙</button>
+</header>
+<main>
+  <section class="welcome">
+    <div><p class="eyebrow">PANEL DE MERCADO</p><h1>Tu mercado,<br><span>en perspectiva.</span></h1></div>
+    <div class="status"><i></i> INTERFAZ DEMO</div>
+  </section>
+  <section class="market-strip">
+    <article><small>S&P 500</small><b>—</b><em>Sin datos conectados</em></article>
+    <article><small>NASDAQ</small><b>—</b><em>Sin datos conectados</em></article>
+    <article><small>IPC · BMV</small><b>—</b><em>Sin datos conectados</em></article>
+  </section>
+  <section class="section-head"><div><p class="eyebrow">VIGILANCIA</p><h2>Lista de seguimiento</h2></div><button id="addBtn" class="add">＋ Añadir</button></section>
+  <section class="watchlist" id="watchlist">
+    <div class="empty"><div class="empty-icon">⌕</div><b>Aún no hay instrumentos conectados</b><p>Cuando se conecte el proveedor de datos, aquí aparecerán precios, variaciones e indicadores reales.</p></div>
+  </section>
+  <section class="section-head"><div><p class="eyebrow">CENTRO DE ANÁLISIS</p><h2>Herramientas</h2></div></section>
+  <section class="tools-grid">
+    <button class="tool" data-panel="technical"><span>⌁</span><b>Técnico</b><small>RSI · MACD · medias</small></button>
+    <button class="tool" data-panel="fundamental"><span>▤</span><b>Fundamental</b><small>Ingresos · deuda · ratios</small></button>
+    <button class="tool" data-panel="news"><span>◷</span><b>Noticias</b><small>Eventos y contexto</small></button>
+    <button class="tool" data-panel="risk"><span>◇</span><b>Riesgo</b><small>Volatilidad · drawdown</small></button>
+  </section>
+  <section class="notice"><b>Estado de conexión</b><p id="connection">Modo de demostración. No se muestran cotizaciones inventadas.</p><small>La actualización cada 15 minutos se activará al desplegar el servicio de datos en la nube.</small></section>
+</main>
+<nav class="bottom-nav">
+  <button class="active"><span>▦</span>Inicio</button>
+  <button data-panel="markets"><span>⌁</span>Mercados</button>
+  <button data-panel="analysis"><span>◈</span>Análisis</button>
+  <button data-panel="portfolio"><span>▣</span>Cartera</button>
+</nav>
+<dialog id="infoDialog"><div class="dialog-inner"><button class="close" id="closeDialog">✕</button><p class="eyebrow">NEXO MARKET</p><h2 id="dialogTitle">Módulo</h2><p id="dialogText"></p><button class="primary" id="okDialog">Entendido</button></div></dialog>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "NEXO Market Monitor",
+  "short_name": "NEXO Market",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0b1422",
+  "theme_color": "#0b1422",
+  "description": "Panel móvil de análisis bursátil",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
